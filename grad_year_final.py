@@ -12,8 +12,8 @@ email_lst = df['email'].to_list()
 
 handle_lst = []
 domain_lst = []
-for i in range(len(email_lst)):
-    email = str(email_lst[i])
+for each in email_lst:
+    email = str(each)
     e = email.split('@')
     handle, domain = e[0], e[-1]
     handle_lst.append(handle)
